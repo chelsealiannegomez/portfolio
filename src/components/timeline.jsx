@@ -23,7 +23,7 @@ const Timeline = () => {
       company: "Keep in School Shape - Research Project",
       role: "Research Intern",
       date: "August 2024 - Present",
-      description: "Our team was awarded a $400,000 National Science Foundation grant to support student knowledge retention during breaks. As a research intern, I analyzed data from over 4,000 participant logs to evaluate program effectiveness and identify trends in user metrics. I also developed internal tools using Python for data cleaning, streamlining deployment processes, and automated student performance evaluation, which improved efficiency and accuracy in analyzing participant data.",
+      description: "Our team was awarded a $400,000 National Science Foundation grant to support student knowledge retention during breaks. As a research intern, I analyzed data from over 4,000 participant logs to evaluate program effectiveness and identify trends in user metrics. I also developed internal tools using Python for data cleaning, streamlining deployment processes, and automated student performance evaluation, which improved our  efficiency and accuracy in analyzing participant data.",
       technologies: ["Excel", "Python", "Pandas"],
       logo: "/src/assets/icons/kiss.png"
     },
