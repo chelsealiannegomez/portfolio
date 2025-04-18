@@ -1,7 +1,7 @@
 {
   "name": "my-app",
   "version": "0.0.0",
-  "homepage": "https://chelsealiannegomez.github.io/portfolio",
+  "homepage": "https://chelsealiannegomez.github.io/portfolio/",
   "type": "module",
   "scripts": {
     "dev": "vite",
