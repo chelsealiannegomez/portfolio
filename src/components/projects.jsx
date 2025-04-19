@@ -1,6 +1,10 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { FaGithub } from 'react-icons/fa';
+import nurse from '../assets/nurse.png';
+import legends from '../assets/legends.png';
+import homework from '../assets/homework.png';
+
 
 const Projects = () => {
   const projects = [
@@ -8,21 +12,21 @@ const Projects = () => {
       title: "Nurse Assist",
       description: "A full-stack web app using Flask, React, MySQL, and Raspberry Pi, enabling real-time patient monitoring and prioritized care through a centralized patient monitoring system designed for healthcare progessionals.",
       technologies: ["Flask", "React", "MySQL", "Raspberry Pi"],
-      image: "/nurse.png",
+      image: nurse,
       github: "https://github.com/Nairinn/Nurse-Assist"
     },
     {
       title: "Nine-90 Navigator",
       description: "A website that allows the user to search through data from thousands of 990 tax returns of nonprofits around the nation. Created for Legends Animated, a nonprofit that provides collaborative opportunities for animation.",
       technologies: ["Svelte", "Elasticsearch"],
-      image: "/legends.png",
+      image: legends,
       github: "https://github.com/2023-opportunity-hack/nine90navigator"
     },
     {
       title: "Homework Helper",
       description: "Presents steps and hints towards homework questions, encouraging learning instead of copying. Uses LaTeX formatting for math equations and variables, ensuring improved readability for users.",
       technologies: ["React", "Flask", "Google Gemini API"],
-      image: "/homework.png",
+      image: homework,
       github: "https://github.com/chelsealiannegomez/homework-helper"
     }
   ];

@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 import Typed from 'typed.js';
+import herowebm from '../assets/hero.webm';
 
 const Hero = () => {
   const typedRef = useRef(null);
@@ -48,7 +49,7 @@ const Hero = () => {
           playsInline
           className="absolute inset-0 w-full h-full object-cover"
         >
-          <source src="/hero.webm" type="video/webm" />
+          <source src={herowebm} type="video/webm" />
         </video>
         <div className="absolute inset-0 bg-black/70"></div>
       </div>
