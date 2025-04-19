@@ -1,7 +1,15 @@
 import React from 'react';
-import { motion } from 'framer-motion';
+import { motion, useScroll, useTransform } from 'framer-motion';
+import kiss from '../assets/icons/kiss.png';
+import meta from '../assets/icons/meta.png';
+import mesa from '../assets/icons/mesa.png';
+import soda from '../assets/icons/soda.png';
+import sm from '../assets/icons/sm.png';
 
 const Timeline = () => {
+  const { scrollYProgress } = useScroll();
+  const y = useTransform(scrollYProgress, [0, 1], [100, -100]);
+
   const experiences = [
     {
       company: "Meta",
@@ -9,7 +17,7 @@ const Timeline = () => {
       date: "June 2025 - August 2025",
       description: "Expected to work on software development, system design, and AI/ML-related projects",
       technologies: [""],
-      logo: "/src/assets/icons/meta.png"
+      logo: meta 
     },
     {
       company: "Mesa Historical Museum",
@@ -17,15 +25,31 @@ const Timeline = () => {
       date: "January 2024 - Present",
       description: "I'm currently leading a team of 8 in developing an interactive touchscreen using React.js to be displayed at the entrance of the museum. I utilized Figma to design engaging user interfaces while adhering to accessibility standards. I also utilized Three.js to integrate animations and 3D models. I engineered exhibit features, implementing responsive button interfaces and custom logic for trivia systems.",
       technologies: ["React", "ThreeJS", "Figma"],
-      logo: "/src/assets/icons/mesa.png"
+      logo: mesa 
     },
     {
       company: "Keep in School Shape - Research Project",
       role: "Research Intern",
       date: "August 2024 - Present",
-      description: "Our team was awarded a $400,000 National Science Foundation grant to support student knowledge retention during breaks. As a research intern, I analyzed data from over 4,000 participant logs to evaluate program effectiveness and identify trends in user metrics. I also developed internal tools using Python for data cleaning, streamlining deployment processes, and automated student performance evaluation, which improved our  efficiency and accuracy in analyzing participant data.",
+      description: "Our team was awarded a $400,000 National Science Foundation grant to support student knowledge retention during breaks. As a research intern, I analyzed data from over 4,000 participant logs to evaluate program effectiveness and identify trends in user metrics. I also developed internal tools using Python for data cleaning, streamlining deployment processes, and automated student performance evaluation, which improved our   efficiency and accuracy in analyzing participant data.",
       technologies: ["Excel", "Python", "Pandas"],
-      logo: "/src/assets/icons/kiss.png"
+      logo: kiss,
+    },
+    {
+      company: "Software Developers Association",
+      role: "Technical Officer",
+      date: "November 2023 - Present",
+      description: "As a technical officer of the largest engineering organization in ASU, I prepare and present engaging workshops on software development topics such as HTML, CSS (Tailwind), JavaScript, Flask, AI APIs, and Streamlit. I'm also working on internal tools to automate our marketing tasks, furthering the impact of our club. I work with fellow officers to deliver weekly events for all our members, fostering an inclusive and engaged community.",
+      technologies: ["Flask", "Google Gemini API", "Streamlit"],
+      logo: soda,
+    },
+    {
+      company: "SM Investments Corporation",
+      role: "Cybersecurity Intern",
+      date: "July 2024 - August 2024",
+      description: "As a cybersecurity intern in the largest company in the Philippines with a market cap of $20 billon, I monitored the online movement of 55,000+ employees and company servers, utilizing tools such as ManageEngine, Trend Vision One, Cloudflare, and Office 365 Microsoft Defender.",
+      technologies: ["ManageEngine", "Trend Vision One", "Cloudflare"],
+      logo: sm,
     },
   ];
 
@@ -40,10 +64,10 @@ const Timeline = () => {
   };
 
   const itemVariants = {
-    hidden: { opacity: 0, x: -50 },
+    hidden: { opacity: 0, y: 100 },
     visible: {
       opacity: 1,
-      x: 0,
+      y: 0,
       transition: {
         duration: 0.5,
       },
@@ -58,7 +82,8 @@ const Timeline = () => {
         variants={containerVariants}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true }}
+        viewport={{ amount: 0.2, once: false }}
+        style={{ y }}
       >
         {experiences.map((experience, index) => (
           <motion.div

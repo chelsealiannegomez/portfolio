@@ -10,9 +10,10 @@ const Hero = () => {
       strings: [
         'Software Developer',
         'Problem Solver',
-        'Learner',
         'Computer Science Major',
-        'Economics Minor'
+        'Economics Minor',
+        'Violinist',
+        'Taekwondo 3rd Dan Blackbelt',
       ],
       typeSpeed: 50,
       backSpeed: 30,
@@ -39,7 +40,6 @@ const Hero = () => {
 
   return (
     <div className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Video Background */}
       <div className="absolute inset-0 w-full h-full">
         <video
           autoPlay
@@ -48,9 +48,9 @@ const Hero = () => {
           playsInline
           className="absolute inset-0 w-full h-full object-cover"
         >
-          <source src="/videos/hero.mp4" type="video/mp4" />
+          <source src="/hero.webm" type="video/webm" />
         </video>
-        <div className="absolute inset-0 bg-black/50"></div>
+        <div className="absolute inset-0 bg-black/70"></div>
       </div>
 
       <div className="relative text-center px-4">
