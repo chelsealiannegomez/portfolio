@@ -76,7 +76,7 @@ const Timeline = () => {
 
   return (
     <div id="experience" className="py-20 px-4">
-      <h2 className="text-4xl font-bold text-center mb-16">My Experience</h2>
+      <h2 className="text-4xl font-bold text-center">My Experience</h2>
       <motion.div
         className="max-w-4xl mx-auto"
         variants={containerVariants}
@@ -92,9 +92,7 @@ const Timeline = () => {
             variants={itemVariants}
           >
             <div className="absolute left-0 top-0 w-1 h-full bg-gray-200"></div>
-            
             <div className="absolute left-[-8px] top-0 w-4 h-4 rounded-full bg-gray-900"></div>
-            
             <div className="ml-8">
               <div className="bg-white p-6 rounded-lg shadow-lg">
                 <div className="flex justify-between items-start mb-4">
