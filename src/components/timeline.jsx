@@ -13,17 +13,17 @@ const Timeline = () => {
   const experiences = [
     {
       company: "Meta",
-      role: "Incoming Software Engineer Intern",
+      role: "Software Engineer Intern",
       date: "June 2025 - August 2025",
-      description: "Expected to work on software development, system design, and AI/ML-related projects",
-      technologies: [""],
+      description: "I built a data pipeline in Python with TensorFlow and PostgreSQL to handle large volumes of regulatory articles, ensuring reliable processing. I also developed a full-stack news aggregation platform with Next.js and TypeScript, using clustering algorithms to make information more accessible for teams. In addition, I improved test coverage for an ads tracking system, helping strengthen code quality and maintainability.",
+      technologies: ["Python", "TensorFlow", "NextJS", "TypeScript"],
       logo: meta 
     },
     {
       company: "Mesa Historical Museum",
       role: "Software Developer",
       date: "January 2024 - Present",
-      description: "I'm currently leading a team of 8 in developing an interactive touchscreen using React.js to be displayed at the entrance of the museum. I utilized Figma to design engaging user interfaces while adhering to accessibility standards. I also utilized Three.js to integrate animations and 3D models. I engineered exhibit features, implementing responsive button interfaces and custom logic for trivia systems.",
+      description: "I led a team of eight to develop an interactive museum touchscreen using React.js, building a component-based architecture with controlled state management. I translated Figma designs into responsive, ADA-compliant interfaces and engineered exhibit features like trivia systems with custom logic. To create engaging experiences, I integrated 3D models and animations using Three.js, optimizing asset loading and scene updates for smooth, high-performance interaction.",
       technologies: ["React", "ThreeJS", "Figma"],
       logo: mesa 
     },
