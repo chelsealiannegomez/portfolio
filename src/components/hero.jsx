@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import Typed from 'typed.js';
 import herowebm from '../assets/hero.webm';
 
-const Hero = () => {
+const Hero = ({ onVideoLoaded }) => {
   const typedRef = useRef(null);
 
   useEffect(() => {
@@ -48,6 +48,8 @@ const Hero = () => {
           muted
           playsInline
           className="absolute inset-0 w-full h-full object-cover"
+          onLoadedData={onVideoLoaded}
+          onCanPlayThrough={onVideoLoaded}
         >
           <source src={herowebm} type="video/webm" />
         </video>
