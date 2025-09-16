@@ -75,8 +75,8 @@ const Timeline = () => {
   };
 
   return (
-    <div id="experience" className="py-20 px-4">
-      <h2 className="text-4xl font-bold text-center">My Experience</h2>
+    <div id="experience" className="py-20 px-4 bg-white border-t border-stone-200">
+      <h2 className="text-5xl font-light text-stone-900 text-center mb-16">My Experience</h2>
       <motion.div
         className="max-w-4xl mx-auto"
         variants={containerVariants}

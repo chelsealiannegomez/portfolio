@@ -31,7 +31,7 @@ const Contact = () => {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-4xl font-bold text-center mb-16"
+          className="text-5xl font-light text-stone-900 text-center mb-16"
         >
           Get in Touch
         </motion.h2>
